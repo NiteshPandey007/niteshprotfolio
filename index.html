@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nitesh Pandey — Data Analyst & Web Developer</title>
+  <meta name="description" content="Portfolio of Nitesh Pandey — Data Analyst & Web Developer from Gorakhpur, UP."/>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Apply saved theme BEFORE paint to avoid flash -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('np-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ==============================
+     NAVIGATION
+     ============================== -->
+<nav id="main-nav">
+  <a href="#hero" class="nav-logo">
+    <img
+      src="images/nitesh.jpg"
+      alt="Nitesh Pandey"
+      class="nav-logo-img"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    />
+    <span class="nav-logo-fallback">NP</span>
+    <span class="nav-logo-name">PORTFOLIO<span class="dot"></span></span>
+  </a>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#download-cv">CV</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-hire">Hire Me →</a>
+
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light mode">
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      <span id="toggle-icon">☀️</span>
+      <span id="toggle-label">LIGHT</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==============================
+     HERO
+     ============================== -->
+<section class="hero" id="hero">
+  <div class="hero-line"></div>
+  <div class="hero-dot"></div>
+  <div class="hero-bg-num">NP</div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="blink"></span>
+      Available for Opportunities
+    </div>
+
+    <h1 class="hero-name">
+      <span class="first">NITESH</span><br>
+      <span class="last">PANDEY</span>
+    </h1>
+
+    <p class="hero-role">
+      <span>Data Analyst</span> &amp; Web Developer
+    </p>
+
+    <p class="hero-sub">
+      B.Tech CSE graduate from Buddha Institute of Technology, Gorakhpur.
+      Turning raw data into clear insights with Python &amp; Power BI —
+      and building clean, responsive web apps with React, Node.js &amp; more.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="#download-cv" class="btn btn-ghost">Download CV ↓</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">8+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">7.33</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Achievements</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2025</span>
+        <span class="stat-label">Graduating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     ABOUT
+     ============================== -->
+<section id="about">
+  <div class="about-grid">
+
+    <!-- Photo -->
+    <div class="about-photo-wrap fade-up">
+      <div class="about-corner"></div>
+      <div class="about-photo-frame" id="photo-frame">
+        <!-- Replace images/nitesh.jpg with your actual photo file -->
+        <img
+          src="images/nitesh.jpg"
+          alt="Nitesh Pandey"
+          onerror="this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'>NP</div>'"
+        />
+      </div>
+      <div class="about-photo-badge">
+        <span class="big">B.Tech</span>
+        CSE 2025
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="about-info fade-up delay-1">
+      <p class="sec-eyebrow">About Me</p>
+      <h2 class="sec-title" style="margin-bottom:1.4rem;">Who Am I?</h2>
+
+      <p>
+        I'm <strong>Nitesh Pandey</strong>, a Computer Science graduate from
+        <strong>Buddha Institute of Technology, GIDA, Gorakhpur</strong>.
+        I specialize in <strong>Data Analytics</strong> and <strong>Web Development</strong>.
+      </p>
+      <p>
+        My passion lies in extracting meaningful insights from complex datasets using Python's
+        powerful ecosystem and creating interactive dashboards with Power BI — while also
+        building responsive, user-friendly web experiences.
+      </p>
+      <p>
+        I love the intersection of data and technology, and I'm always eager to learn
+        new frameworks and solve real-world problems.
+      </p>
+
+      <div class="about-chips">
+        <span class="chip">📍 Gorakhpur, U.P.</span>
+        <span class="chip">🎓 B.Tech CSE</span>
+        <span class="chip">📊 Data Analyst</span>
+        <span class="chip">💻 Web Developer</span>
+        <span class="chip">✅ Open to Work</span>
+        <span class="chip">🏆 SIH Participant</span>
+      </div>
+
+      <div class="info-row">
+        <div class="info-item">
+          <span class="info-label">Date of Birth</span>
+          <span class="info-val">07 Sep 2003</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Languages</span>
+          <span class="info-val">English, Hindi</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-val">pandeynitesh762@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Phone</span>
+          <span class="info-val">+91 8887629955</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     SKILLS
+     ============================== -->
+<section id="skills">
+  <p class="sec-eyebrow">What I Know</p>
+  <h2 class="sec-title">Skills &amp; Tools</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card fade-up">
+      <div class="sk-head"><div class="sk-icon sk-i1">📊</div><div class="sk-title">Data Analytics</div></div>
+      <div class="sk-pills">
+        <span class="sk-pill">Python</span><span class="sk-pill">Pandas</span>
+        <span class="sk-pill">NumPy</span><span class="sk-pill">Matplotlib</span>
+        <span class="sk-pill">Seaborn</span><span class="sk-pill">EDA</span>
+        <span class="sk-pill">Scikit-learn</span><span class="sk-pill">YData Profiling</span>
+      </div>
+      <div class="bar-row"><div class="bar-meta"><span>Python / Pandas</span><span>88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Data Visualization</span><span>83%</span></div><div class="bar-track"><div class="bar-fill" data-w="83%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>EDA / ML</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78%"></div></div></div>
+    </div>
+
+    <div class="skill-card fade-up delay-1">
+      <div class="sk-head"><div class="sk-icon sk-i2">🗄️</div><div class="sk-title">Database &amp; BI</div></div>
+      <div class="sk-pills">
+        <span class="sk-pill">MySQL</span><span class="sk-pill">Power BI</span>
+        <span class="sk-pill">SQL Queries</span><span class="sk-pill">Data Modeling</span>
+        <span class="sk-pill">Dashboards</span>
+      </div>
+      <div class="bar-row"><div class="bar-meta"><span>MySQL</span><span>80%</span></div><div class="bar-track"><div class="bar-fill purple" data-w="80%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Power BI</span><span>76%</span></div><div class="bar-track"><div class="bar-fill purple" data-w="76%"></div></div></div>
+    </div>
+
+    <div class="skill-card fade-up delay-2">
+      <div class="sk-head"><div class="sk-icon sk-i3">🌐</div><div class="sk-title">Web Development</div></div>
+      <div class="sk-pills">
+        <span class="sk-pill">HTML5</span><span class="sk-pill">CSS3</span>
+        <span class="sk-pill">JavaScript</span><span class="sk-pill">React.js</span>
+        <span class="sk-pill">Node.js</span><span class="sk-pill">Express</span>
+        <span class="sk-pill">MongoDB</span><span class="sk-pill">REST API</span>
+      </div>
+      <div class="bar-row"><div class="bar-meta"><span>HTML / CSS / JS</span><span>85%</span></div><div class="bar-track"><div class="bar-fill green" data-w="85%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>React / Node.js</span><span>74%</span></div><div class="bar-track"><div class="bar-fill green" data-w="74%"></div></div></div>
+    </div>
+
+    <div class="skill-card fade-up delay-3">
+      <div class="sk-head"><div class="sk-icon sk-i4">⚙️</div><div class="sk-title">Tools &amp; DevOps</div></div>
+      <div class="sk-pills">
+        <span class="sk-pill">VS Code</span><span class="sk-pill">PyCharm</span>
+        <span class="sk-pill">Jupyter Notebook</span><span class="sk-pill">Git &amp; GitHub</span>
+        <span class="sk-pill">Vercel</span><span class="sk-pill">Render</span>
+        <span class="sk-pill">Vite</span><span class="sk-pill">C Programming</span>
+      </div>
+      <div class="bar-row"><div class="bar-meta"><span>Git / GitHub</span><span>85%</span></div><div class="bar-track"><div class="bar-fill amber" data-w="85%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Deploy (Vercel/Render)</span><span>80%</span></div><div class="bar-track"><div class="bar-fill amber" data-w="80%"></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     PROJECTS
+     ============================== -->
+<section id="projects">
+  <p class="sec-eyebrow">What I've Built</p>
+  <h2 class="sec-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- 01 — JobNest LIVE -->
+    <div class="proj-card fade-up">
+      <span class="proj-badge-live">Live</span>
+      <div class="proj-top">
+        <span class="proj-type">Full Stack · MERN</span>
+        <span class="proj-num">01</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">JobNest — Job Portal Platform</h3>
+      <p class="proj-desc">
+        A complete job portal web app with three roles — Admin, Employer and Job Seeker.
+        Employers can post jobs, seekers can apply and track applications, and the admin
+        panel manages the entire platform. Features JWT authentication, MongoDB Atlas
+        database, and role-based dashboards deployed across Vercel + Render.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">React.js</span><span class="proj-tag">Node.js</span>
+        <span class="proj-tag">Express</span><span class="proj-tag">MongoDB</span>
+        <span class="proj-tag">JWT Auth</span><span class="proj-tag">Vercel</span>
+        <span class="proj-tag">Render</span><span class="proj-tag">CSS</span>
+      </div>
+      <div class="proj-links">
+        <a href="https://job-nest-final.vercel.app/" target="_blank" class="proj-link live">🚀 Live Demo</a>
+        <a href="https://github.com/NiteshPandey007/JobNest-Final" target="_blank" class="proj-link">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <!-- 02 — AI Resume Analyzer LIVE -->
+    <div class="proj-card fade-up delay-1">
+      <span class="proj-badge-live">Live</span>
+      <div class="proj-top">
+        <span class="proj-type">AI · Full Stack</span>
+        <span class="proj-num">02</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">AI Resume Analyzer</h3>
+      <p class="proj-desc">
+        An AI-powered resume tool built with React + Node.js and Anthropic Claude AI.
+        Upload a PDF/DOCX resume → get an AI score, ATS compatibility check, and skill
+        gap analysis. Also includes an ATS-optimized resume downloader, a resume builder
+        from scratch, and an admin panel to manage uploaded resumes with stats.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">React + Vite</span><span class="proj-tag">Node.js</span>
+        <span class="proj-tag">Claude AI</span><span class="proj-tag">Express</span>
+        <span class="proj-tag">PDFKit</span><span class="proj-tag">Vercel</span>
+        <span class="proj-tag">Render</span><span class="proj-tag">LocalStorage</span>
+      </div>
+      <div class="proj-links">
+        <a href="https://ai-resume-analyzer-psi-rouge.vercel.app/" target="_blank" class="proj-link live">🚀 Live Demo</a>
+        <a href="https://github.com/NiteshPandey007/ai-resume-analyzer" target="_blank" class="proj-link">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <!-- 03 — RescueReady -->
+    <div class="proj-card fade-up delay-2">
+      <div class="proj-top">
+        <span class="proj-type">Ongoing · Mobile App</span>
+        <span class="proj-num">03</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">RescueReady — Personal Safety App</h3>
+      <p class="proj-desc">
+        Emergency safety mobile application with a "Danger Button" that sends real-time
+        GPS location via SMS, alerts nearby users within 1 km radius, activates automatic
+        camera recording and triggers a continuous buzzer. Emergency can also be triggered
+        by pressing volume up + down simultaneously. Built for community-first safety.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">Python</span><span class="proj-tag">MySQL</span>
+        <span class="proj-tag">SMS API</span><span class="proj-tag">GPS</span>
+        <span class="proj-tag">UX Design</span>
+      </div>
+    </div>
+
+    <!-- 04 — Heart Disease -->
+    <div class="proj-card fade-up">
+      <div class="proj-top">
+        <span class="proj-type">Data Analytics · EDA</span>
+        <span class="proj-num">04</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">Heart Disease Prediction (EDA)</h3>
+      <p class="proj-desc">
+        Comprehensive exploratory data analysis on a heart disease dataset using Python.
+        Analyzed health indicators like cholesterol, blood pressure, and age to visualize
+        correlations, identify key risk factors, and enhance predictive modeling accuracy
+        for early-stage heart disease detection.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">Python</span><span class="proj-tag">Pandas</span>
+        <span class="proj-tag">NumPy</span><span class="proj-tag">Matplotlib</span>
+        <span class="proj-tag">Seaborn</span>
+      </div>
+    </div>
+
+    <!-- 05 — Customer Churn -->
+    <div class="proj-card fade-up delay-1">
+      <div class="proj-top">
+        <span class="proj-type">Data Analytics · ML</span>
+        <span class="proj-num">05</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">Customer Churn Prediction</h3>
+      <p class="proj-desc">
+        Built a predictive model for a subscription-based service to forecast customer
+        churn with high accuracy. Performed feature engineering, correlation analysis
+        and EDA to identify key churn indicators. Used Scikit-learn for modeling —
+        delivered actionable retention strategies for the business.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span>
+        <span class="proj-tag">Pandas</span><span class="proj-tag">Seaborn</span>
+        <span class="proj-tag">Feature Eng.</span>
+      </div>
+    </div>
+
+    <!-- 06 — Diwali Sales -->
+    <div class="proj-card fade-up delay-2">
+      <div class="proj-top">
+        <span class="proj-type">Data Analytics · EDA</span>
+        <span class="proj-num">06</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">Diwali Sales Analysis (EDA)</h3>
+      <p class="proj-desc">
+        Deep dive into Diwali festive season sales data to uncover customer buying
+        behavior and trends. Explored key factors — gender, age group, state, occupation
+        and product categories influencing sales. Used YData Profiling for automated
+        EDA reports with rich visualizations.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">Python</span><span class="proj-tag">Pandas</span>
+        <span class="proj-tag">Matplotlib</span><span class="proj-tag">Seaborn</span>
+        <span class="proj-tag">YData Profiling</span>
+      </div>
+    </div>
+
+    <!-- 07 — Homely Vision -->
+    <div class="proj-card fade-up">
+      <div class="proj-top">
+        <span class="proj-type">Web Development</span>
+        <span class="proj-num">07</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">Homely Vision — Home Design Platform</h3>
+      <p class="proj-desc">
+        A user-centric platform where users input their land area and receive customized
+        home design solutions — complete with architectural plans, number of floors,
+        room layouts and estimated pricing tailored to their specific requirements.
+        Built as a team of 4 over 2 months.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">HTML</span><span class="proj-tag">CSS</span>
+        <span class="proj-tag">JavaScript</span>
+      </div>
+    </div>
+
+    <!-- 08 — Online Banking -->
+    <div class="proj-card fade-up delay-1">
+      <div class="proj-top">
+        <span class="proj-type">C Programming</span>
+        <span class="proj-num">08</span>
+      </div>
+      <div class="proj-divider"></div>
+      <h3 class="proj-title">Online Banking System in C</h3>
+      <p class="proj-desc">
+        A functional console-based banking system implementing user registration, secure
+        login, account management, balance inquiries, deposit &amp; withdrawal transactions.
+        Won 2nd place at TechYuva Annual Tech Fest — BIT Gorakhpur. Built as a team of 3.
+      </p>
+      <div class="proj-stack">
+        <span class="proj-tag">C Programming</span>
+        <span class="proj-tag">File I/O</span>
+        <span class="proj-tag">Data Structures</span>
+        <span class="proj-tag">🥈 2nd Place</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     CERTIFICATIONS & ACHIEVEMENTS
+     ============================== -->
+<section id="certifications">
+  <p class="sec-eyebrow">Learning &amp; Wins</p>
+  <h2 class="sec-title">Certs &amp; Achievements</h2>
+
+  <div class="cert-layout">
+
+    <!-- Certifications Timeline -->
+    <div class="fade-up">
+      <p class="cert-sub-title">Certifications &amp; Education</p>
+      <div class="cert-timeline">
+        <div class="cert-item">
+          <p class="cert-date">July 2024 – August 2024</p>
+          <p class="cert-title">Data Science with Machine Learning</p>
+          <p class="cert-org">Sofcon Scortek Pvt. Ltd. · Lucknow, U.P.</p>
+        </div>
+        <div class="cert-item">
+          <p class="cert-date">March 13–15, 2024</p>
+          <p class="cert-title">Machine Learning &amp; Its Application Workshop</p>
+          <p class="cert-org">By Dr. Dheeraj D · Buddha Institute of Technology</p>
+        </div>
+        <div class="cert-item">
+          <p class="cert-date">December 3–4, 2022</p>
+          <p class="cert-title">Data Science Workshop — ShapeMySkills</p>
+          <p class="cert-org">Buddha Institute of Technology, Gorakhpur</p>
+        </div>
+        <div class="cert-item">
+          <p class="cert-date">2021 – 2025</p>
+          <p class="cert-title">B.Tech — Computer Science &amp; Engineering</p>
+          <p class="cert-org">Buddha Institute of Technology, GIDA, Gorakhpur · CGPA 7.33</p>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="fade-up delay-1">
+      <p class="cert-sub-title">Achievements</p>
+      <div class="ach-list">
+        <div class="ach-card">
+          <span class="ach-icon">🥈</span>
+          <div class="ach-text">
+            <strong>2nd Place — TechYuva Competition</strong>
+            Won second place at BIT Gorakhpur's annual tech fest for the Online Banking System project built in C.
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🥉</span>
+          <div class="ach-text">
+            <strong>3rd Place — Pythonia Quiz, TechYuva</strong>
+            Achieved 3rd position in the Python Quiz competition at TechYuva, BIT Gorakhpur.
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🏆</span>
+          <div class="ach-text">
+            <strong>Smart India Hackathon (SIH) 2023</strong>
+            Participated in the prestigious national-level hackathon representing BIT Gorakhpur.
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🐍</span>
+          <div class="ach-text">
+            <strong>Python Coding Competition</strong>
+            Competed in Python Coding Competition organized at Buddha Institute of Technology.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     CONTACT
+     ============================== -->
+<section id="contact">
+  <p class="sec-eyebrow">Let's Connect</p>
+  <h2 class="sec-title">Get In Touch</h2>
+
+  <div class="contact-grid">
+
+    <!-- Social Links -->
+    <div class="fade-up">
+      <p style="color:var(--ink2);margin-bottom:2rem;font-size:1rem;line-height:1.8;">
+        Have a project, internship opportunity or just want to say hi?
+        I'm always open to new connections and collaborations!
+      </p>
+
+      <!--
+        =====================================================
+        SOCIAL MEDIA LINKS — ADD YOUR USERNAMES BELOW
+        Format: https://platform.com/YOUR_USERNAME
+        =====================================================
+      -->
+      <div class="social-list">
+
+        <a href="https://wa.me/918887629955" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-wa"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+          <span class="soc-name">WhatsApp</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <!-- INSTAGRAM: change YOUR_INSTAGRAM_USERNAME -->
+        <a href="https://instagram.com/___mr.nitesh" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-ig"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
+          <span class="soc-name">Instagram</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <a href="https://github.com/NiteshPandey007" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-gh"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></span>
+          <span class="soc-name">GitHub</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <!-- TWITTER: change YOUR_TWITTER_USERNAME -->
+        <a href="https://twitter.com/NiteshPandey07" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-tw"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></span>
+          <span class="soc-name">Twitter</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <a href="https://linkedin.com/in/niteshpandey007" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-li"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+          <span class="soc-name">LinkedIn</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <!-- FACEBOOK: change YOUR_FB_USERNAME -->
+        <a href="https://facebook.com/niteshpandey07" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-fb"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+          <span class="soc-name">Facebook</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+        <!-- THREADS: change YOUR_THREADS_USERNAME -->
+        <a href="https://threads.net/@___mr.nitesh" class="soc-link" target="_blank" rel="noopener">
+          <span class="soc-ico s-th"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 1.747-.012 3.233-.502 4.421-1.456 1.53-1.207 2.357-2.963 2.357-4.985v-.09c-.002-2.016-.714-3.776-2.146-4.972-1.084-.909-2.498-1.4-4.178-1.458-.144 2.47-.83 4.396-2.057 5.756-1.196 1.33-2.877 2.003-4.994 2.003-.126 0-.254-.006-.38-.015-1.665-.11-2.99-.71-3.871-1.729-.942-1.091-1.322-2.58-1.091-4.186.23-1.6.992-2.894 2.177-3.63 1.075-.673 2.44-.928 3.945-.74.803.1 1.556.34 2.228.71.075-1.06.037-2.17-.107-3.312-.156-1.24-.495-2.344-1.012-3.28-1.002-1.817-2.785-2.765-5.307-2.817v-2.16c3.284.057 5.755 1.462 7.03 3.97.524 1 .9 2.143 1.107 3.4.154.952.234 1.955.24 3.004.67-.064 1.294-.08 1.866-.049l.044.003c2.08.12 3.887.716 5.26 1.88 1.93 1.615 2.936 4.007 2.938 6.683v.09c-.003 2.666-1.044 5.072-2.938 6.748C16.888 23.26 14.756 23.98 12.186 24z"/></svg></span>
+          <span class="soc-name">Threads</span>
+          <span class="soc-arr">→</span>
+        </a>
+
+      </div>
+
+      <div class="contact-info">
+        <div class="ci-row"><strong>Email</strong> pandeynitesh762@gmail.com</div>
+        <div class="ci-row"><strong>Phone</strong> +91 8887629955</div>
+        <div class="ci-row"><strong>Location</strong> Gorakhpur, Uttar Pradesh</div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="fade-up delay-1">
+      <form id="contact-form" class="contact-form-wrap" novalidate>
+        <div class="fg-row">
+          <div class="fg">
+            <label for="from_name">Your Name</label>
+            <input type="text" id="from_name" placeholder="Your Name" required/>
+          </div>
+          <div class="fg">
+            <label for="from_email">Email</label>
+            <input type="email" id="from_email" placeholder="email@example.com" required/>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project / Internship / Collaboration"/>
+        </div>
+        <div class="fg">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your messages.." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;border-radius:10px;font-size:0.95rem;">
+          Send Message ✦
+        </button>
+        <div class="form-status success" id="form-success">✓ Messages sent</div>
+        <div class="form-status error" id="form-error">✗ some error. Email: pandeynitesh762@gmail.com</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     DOWNLOAD CV
+     ============================== -->
+<section id="download-cv">
+  <p class="sec-eyebrow" style="justify-content:center;">My Resume</p>
+  <h2 class="sec-title" style="text-align:center;">Download CV</h2>
+  <div class="cv-wrapper">
+    <div class="cv-card fade-up">
+      <div class="cv-icon">📄</div>
+      <h3>Nitesh Pandey — Resume</h3>
+      <p>Data Analyst · Web Developer · B.Tech CSE 2025<br>Buddha Institute of Technology, Gorakhpur</p>
+      <!--
+        CV FILE: Put your CV PDF inside a "documents" folder
+        as documents/Nitesh_CV.pdf  and the link below will work.
+        Image also goes in images/nitesh.jpg
+      -->
+      <a href="documents/nitesh_resume.pdf" download="nitesh_resume.pdf" class="btn btn-primary" style="margin-top:0.5rem;">
+        ⬇ Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     FOOTER
+     ============================== -->
+<footer>
+  <p>© 2025 <strong>Nitesh Pandey</strong>. All rights reserved.</p>
+  <p>Made with ❤️ in Gorakhpur · <a href="mailto:pandeynitesh762@gmail.com">pandeynitesh762@gmail.com</a></p>
+</footer>
+
+<!-- JS -->
+<script src="main.js"></script>
+
+</body>
+</html>
